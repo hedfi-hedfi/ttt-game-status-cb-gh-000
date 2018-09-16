@@ -45,5 +45,4 @@ def drawn?(board)
   elsif !full?(board) and !won?(board)
     return false
   end
-
 end
