@@ -48,6 +48,7 @@ def draw?(board)
 end
 
 def over?(board)
+  won?(board) and draw?(board) and full?(board)
 end
 
 def winner?(board)
