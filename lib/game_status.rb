@@ -36,3 +36,14 @@ def full?(board)
     cell == " "
   end
 end
+
+def drawn?(board)
+  if won?(board)
+    return false
+  elsif full?(board) and !won?(board)
+    return true
+  elsif !full?(board) and !won?(board)
+    return false
+  end
+    
+end
